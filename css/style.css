@@ -189,6 +189,16 @@ body {
   .modal-content label{
     color: #F1C983;
   }
+
+  .imgContenido {
+    display: grid;
+    place-content: center;
+  }
+
+  .imgContenido img {
+    width: 80%;
+    margin: auto;
+  }
  
   @media (max-width: 991px){
     header{
