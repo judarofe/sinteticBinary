@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+#modal_load{
+  display: none;
+}
+
 #particles-js {
     position: fixed;
     height: 100vh;
