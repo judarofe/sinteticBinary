@@ -10,10 +10,13 @@ function validarFormularioRegistrar() {
     var mensajeFalta = "";
     var mensaje = "";
     var miDiv = document.getElementById("mensajeAlerta");
+    var Pass1 = document.getElementById("PasswordV1").value;
+    var Pass2 = document.getElementById("PasswordV2").value;
 
     const err_Name = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ]+$/;
     const err_Correo = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     const err_Codigo = /^[a-zA-Z0-9]{1,8}$/;
+    const err_pass = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d\/\-_#$%&*?¿!@^+=]{8,}$/;
 
     miDiv.innerHTML = "";
 
@@ -70,6 +73,18 @@ function validarFormularioRegistrar() {
     } else {
         if (err_Codigo.test(inputcodigo) == false){
             mensaje = mensaje + "<li>Transcriba el codigo enviado a su email</li>";
+        }
+    }
+
+    if (Pass1 == "" || Pass2 == ""){
+        mensajeFalta = mensajeFalta + "<li>Ingrese su contraseña</li>";
+    } else {
+        if (err_pass.test(Pass1) == false || err_pass.test(Pass2) == false){
+            mensaje = mensaje + "<li>Su contraseña no cumple con los requerimientos</li>";
+        }else{
+            if (Pass1 != Pass2) {
+                mensaje = mensaje + "<li>Las contraseñas no son iguales</li>";
+            }
         }
     }
 
