@@ -1,0 +1,63 @@
+@import url(style.css);
+
+.menu {
+    background-color: transparent;
+    width: 85%;
+    margin: auto;
+    padding: 1%;
+}
+  
+.logoMenu {
+    height: 40px;
+}
+  
+.collapse {
+    justify-content: end;
+}
+  
+.collapse li{
+    padding: 0px 10px;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    font-size: var(--sizeFont_1);
+}
+
+.itemMenuGo{
+    color: var(--color_1);
+}
+
+.itemMenu{
+    color: var(--color_3);
+}
+
+.itemMenuGo:hover {
+    border-bottom: 2px solid var(--color_1);
+    cursor: pointer;
+}
+
+.itemMenu:hover {
+    border-bottom: 2px solid var(--color_1);
+    cursor: pointer;
+}
+
+@media (max-width: 991px){
+    header{
+      background-color: var(--color_4);
+      font-size: var(--sizeFont_3);
+      text-align: center;
+    }
+
+    .itemMenu{
+      color: var(--color_3);
+    }
+
+    .menu{
+      width: 95%;
+    }
+}

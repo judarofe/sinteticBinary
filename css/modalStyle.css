@@ -1,0 +1,48 @@
+@import url(style.css);
+
+#modal_load{
+    display: none;
+}
+
+.main_select_s {
+    display: none;
+}
+  
+.select_content {
+    display: none;
+}
+
+.main_select_s:checked~.select_content {
+    display: block;
+}
+
+.btn_pest{
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    width: 95%;
+    margin: auto;
+    padding: 8px;
+}
+
+.modal-header{
+    background-color: var(--color_3);
+    color:var(--color_4);
+}
+
+.modal-body {
+    background-color: var(--color_4);
+    color: var(--color_3);
+}
+
+.footerOP{
+    background-color: var(--color_2);
+}
+
+.modal {
+    background-color: var(--color_8);
+}
+
+.modal-content label{
+    color: var(--color_1);
+}

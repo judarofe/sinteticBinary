@@ -1,3 +1,7 @@
+<?php
+include("componentes.php");
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -6,46 +10,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SYNTHETIC BINARY ACADEMY | Inicio</title>
     <link rel="stylesheet" href="css/style.css">
-   
+    <link rel="stylesheet" href="css/menuStyle.css">
+    <link rel="stylesheet" href="css/modalStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body>
-  <div id="particles-js"></div>
-<!--particulas-->
-  <header>
-    <nav class="navbar navbar-expand-lg navbar-dark menu">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#"><img class="logoMenu" src="" alt=""></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="index.html"><strong class="itemMenuGo">Inicio</strong></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="ourCompany.html"><span class="itemMenu">Nosotros</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Services.html"><span class="itemMenu">Contacto</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Services.html"><span class="itemMenu">Perfil</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-bs-toggle="modal" data-bs-target="#SesionModal"><span class="itemMenu">Iniciar Sesión</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="Services.html"><span class="itemMenu">Cerrar Sesión</span></a>
-            </li>            
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-  
+<div id="particles-js"></div>
+
+<?php
+  echo $menu;
+?>
 <!-- Modal -->
 <div class="modal fade" id="SesionModal" data-bs-backdrop="static" tabindex="-1" aria-labelledby="SesionModalLabel" aria-hidden="true">
   <div class="modal-dialog">
@@ -289,13 +264,13 @@
     </div>
   </section>
 
-  <footer></footer>
-  
-<!--particulas-->
+<?php
+  echo $pie;
+?>
+
 <script src="js/particles.js"></script>
 <script src="js/lib/stats.js"></script>
 <script src="js/app.js"></script>
-
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 
 <script src="js/formRegistro.js"></script>
