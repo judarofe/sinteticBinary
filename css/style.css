@@ -24,6 +24,7 @@ body {
   --sizeFont_3: 2.2vw;
 
   --sizeFont_4: 1vw;
+  --sizeFont_5: 5vh;
 }
 
 #particles-js {
@@ -199,4 +200,57 @@ footer img{
   .txtInicio {
     width: 100%;
   }
+}
+
+@media (max-width: 500px){
+  .forma_1 {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "de_1" "iz_1";
+  }
+
+  .txtInicio,
+  .txtSeccion{
+    font-size: var(--sizeFont_3);
+    text-align: center;
+  }
+
+  .linea-I {
+    width: 25%;
+    margin: auto;
+  }
+
+  .txtContenido,
+  .txtContenido_2 {
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  .forma_2 {
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:  "img_21 txt_21 txt_21 txt_21 txt_21"
+                          "txt_22 txt_22 txt_22 txt_22 img_22";
+  }
+
+  .imgContenido img {
+    width: 50%;
+  }
+
+  .footer {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(3, auto);
+    grid-template-areas: "alia" "soci" "term";
+
+    font-size: var(--sizeFont_3);
+    text-align: center;
+  }
+  .sociales svg {
+    height: var(--sizeFont_5);
+  }
+  footer img{
+    height: var(--sizeFont_3);
+    width: auto;
+  }
+  
 }
