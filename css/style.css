@@ -1,256 +1,270 @@
 *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-  width: 100%;
+width: 100%;
 }
 
 :root {
-  --color_1: #F1C983;
-  --color_2: #081426;
-  --color_3: #ffffff;
-  --color_4: #0A1C30;
+--color_1: #F1C983;
+--color_2: #081426;
+--color_3: #ffffff;
+--color_4: #0A1C30;
 
-  --color_5: #081627;
-  --color_6: #08324A;
-  --color_7: #064B68;
+--color_5: #081627;
+--color_6: #08324A;
+--color_7: #064B68;
 
-  --color_8: rgba(255, 255, 255, 0.5);
+--color_8: rgba(255, 255, 255, 0.5);
 
-  --sizeFont_1: 1.6vw;
-  --sizeFont_2: 1.9vw;
-  --sizeFont_3: 2.2vw;
+--sizeFont_1: 1.6vw;
+--sizeFont_2: 1.9vw;
+--sizeFont_3: 2.2vw;
 
-  --sizeFont_4: 1vw;
-  --sizeFont_5: 5vh;
+--sizeFont_4: 1vw;
+--sizeFont_5: 5vh;
 }
 
 #particles-js {
-  position: fixed;
-  height: 100vh;
-  width: 100%;
-  pointer-events: none;
+position: fixed;
+height: 100vh;
+width: 100%;
+pointer-events: none;
 }
-  
+
 section {
-  background: var(--color_5);
-  background: linear-gradient(20deg, var(--color_5) 0%, var(--color_6) 77%, var(--color_7) 100%);
-  width: 100%;
-  color: var(--color_3);
-  padding-top: 65px;
-  padding-bottom: 65px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+background: var(--color_5);
+background: linear-gradient(20deg, var(--color_5) 0%, var(--color_6) 77%, var(--color_7) 100%);
+width: 100%;
+color: var(--color_3);
+padding-top: 65px;
+padding-bottom: 65px;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
 }
 
 footer {
-  background-color: var(--color_2);
-  border-top: 1px solid var(--color_1);
-  padding: 2vw;
+background-color: var(--color_2);
+border-top: 1px solid var(--color_1);
+padding: 2vw;
+
+position: relative;
+z-index: 100;
 }
 
 .footer {
-  width: 100%;
-  margin: auto;
-  
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas:  "term alia soci";
+width: 100%;
+margin: auto;
 
-  color: var(--color_3);
-  font-size: var(--sizeFont_4);
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(1, auto);
+grid-template-areas:  "term alia soci";
+
+color: var(--color_3);
+font-size: var(--sizeFont_4);
 }
 
 .footer a{
-  text-decoration: none;
-  color: var(--color_3);
+text-decoration: none;
+color: var(--color_3);
 }
 
 .terminos{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .aliados .col{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .sociales .col{
-  display: flex;
-  align-items: center;
-  justify-content: center;
+display: flex;
+align-items: center;
+justify-content: center;
 }
 
 .sociales svg {
-  height: var(--sizeFont_3);
-  margin: 1vh;
+height: var(--sizeFont_3);
+margin: 1vh;
 }
 
 footer img{
-  width: 9vw;
-  margin: 1vw;
+width: 9vw;
+margin: 1vw;
 }
 
 .terminos {
-  grid-area: term;
+grid-area: term;
 }
 
 .aliados {
-  grid-area: alia;
+grid-area: alia;
 }
 
 .sociales {
-  grid-area: soci;
+grid-area: soci;
 }
 
 .contenedor {
-  width: 80%;
-  margin: auto;
+width: 80%;
+margin: auto;
 }
 
 .contenedorFooter {
-  width: 90%;
-  margin: auto;
+width: 90%;
+margin: auto;
 }
 
 .forma_1 {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, auto);
-  grid-template-areas: "iz_1 de_1";
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(1, auto);
+grid-template-areas: "iz_1 de_1";
 }
 
 .grid_1_1 {
-  grid-area: iz_1;
+grid-area: iz_1;
 }
 
 .grid_1_2 {
-  grid-area: de_1;
+grid-area: de_1;
 }
 
 .forma_2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas:  "img_21 txt_21 txt_21"
-                        "txt_22 txt_22 img_22";
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, auto);
+grid-template-areas:  "img_21 txt_21 txt_21"
+                      "txt_22 txt_22 img_22";
 }
 
 .grid_2_1 {
-  grid-area: img_21;
+grid-area: img_21;
 }
 .grid_2_2 {
-  grid-area: txt_21;
+grid-area: txt_21;
 }
 .grid_2_3 {
-  grid-area: txt_22;
+grid-area: txt_22;
 }
 .grid_2_4 {
-  grid-area: img_22;
+grid-area: img_22;
 }
 
 .txtInicio {
-  width: 50%;
-  display: block;
-  font-size: var(--sizeFont_2);
+width: 50%;
+display: block;
+font-size: var(--sizeFont_2);
 }
 
 .txtSeccion {
-  width: 100%;
-  display: block;
-  font-size: var(--sizeFont_1);
+width: 100%;
+display: block;
+font-size: var(--sizeFont_1);
 }
 
 .txtContenido {
-  margin-top: 25vh;
-  margin-bottom: 25vh;
+margin-top: 25vh;
+margin-bottom: 25vh;
 }
 
 .txtContenido_2 {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+margin-top: 10vh;
+margin-bottom: 10vh;
+}
+
+.linea-I {
+width: 25%;
+border-bottom: 3px solid var(--color_1);
+}
+
+.imgContenido {
+display: grid;
+place-content: center;
+}
+
+.imgContenido img {
+width: 80%;
+margin: auto;
+}
+
+#video {
+margin: auto;
+}
+
+section h2 {
+display: block;
+width: 100%;
+text-align: center;
+color: var(--color_1);
+}
+
+@media (max-width: 700px){
+.contenedor {
+  width: 95%;
+}
+.txtInicio {
+  width: 100%;
+}
+}
+
+@media (max-width: 500px){
+.forma_1 {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "de_1" "iz_1";
+}
+
+.txtInicio,
+.txtSeccion{
+  font-size: var(--sizeFont_3);
+  text-align: center;
 }
 
 .linea-I {
   width: 25%;
-  border-bottom: 3px solid var(--color_1);
-}
-
-.imgContenido {
-  display: grid;
-  place-content: center;
-}
-
-.imgContenido img {
-  width: 80%;
   margin: auto;
 }
 
-@media (max-width: 700px){
-  .contenedor {
-    width: 95%;
-  }
-  .txtInicio {
-    width: 100%;
-  }
+.txtContenido,
+.txtContenido_2 {
+  margin-top: 1vh;
+  margin-bottom: 1vh;
 }
 
-@media (max-width: 500px){
-  .forma_1 {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas: "de_1" "iz_1";
-  }
+.forma_2 {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas:  "img_21 txt_21 txt_21 txt_21 txt_21"
+                        "txt_22 txt_22 txt_22 txt_22 img_22";
+}
 
-  .txtInicio,
-  .txtSeccion{
-    font-size: var(--sizeFont_3);
-    text-align: center;
-  }
+.imgContenido img {
+  width: 50%;
+}
 
-  .linea-I {
-    width: 25%;
-    margin: auto;
-  }
+.footer {
+  grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas: "alia" "soci" "term";
 
-  .txtContenido,
-  .txtContenido_2 {
-    margin-top: 1vh;
-    margin-bottom: 1vh;
-  }
+  font-size: var(--sizeFont_3);
+  text-align: center;
+}
+.sociales svg {
+  height: var(--sizeFont_5);
+}
+footer img{
+  height: var(--sizeFont_3);
+  width: auto;
+}
 
-  .forma_2 {
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(2, auto);
-    grid-template-areas:  "img_21 txt_21 txt_21 txt_21 txt_21"
-                          "txt_22 txt_22 txt_22 txt_22 img_22";
-  }
-
-  .imgContenido img {
-    width: 50%;
-  }
-
-  .footer {
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(3, auto);
-    grid-template-areas: "alia" "soci" "term";
-
-    font-size: var(--sizeFont_3);
-    text-align: center;
-  }
-  .sociales svg {
-    height: var(--sizeFont_5);
-  }
-  footer img{
-    height: var(--sizeFont_3);
-    width: auto;
-  }
-  
 }

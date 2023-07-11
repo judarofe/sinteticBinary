@@ -30,6 +30,7 @@ header{
 
 .itemMenuGo{
     color: var(--color_1);
+    font-weight: bold;
 }
 
 .itemMenu{

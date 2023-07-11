@@ -1,0 +1,110 @@
+@import url(style.css);
+
+.contenedorPerfil {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:    "perfil contenido contenido contenido"
+                            "perfil noticias noticias noticias";
+
+    position: relative;
+    z-index: 100;
+}
+
+.perfil {
+    grid-area: perfil;
+
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(7, auto);
+    grid-template-areas:    "fotoPerfil"
+                            "datosPerfil"
+                            "MenuPerfil_1"
+                            "MenuPerfil_2"
+                            "MenuPerfil_3"
+                            "MenuPerfil_4"
+                            "MenuPerfil_5";
+    text-align: center;
+    padding: 5px;
+}
+
+.iconPerfilSVG {
+    width: 30%;
+}
+
+.perfil label{
+    margin: 6px;
+    color: var(--color_1);
+}
+
+.perfil label i{
+    cursor: pointer;
+}
+
+.menuPerfil {
+    display: block;
+}
+
+.menuPerfil:hover{
+    transform: scale(1.2);
+}
+
+.fotoPerfil{
+    grid-area: fotoPerfil;
+    background-color: var( --color_3);
+    clip-path: circle(50%);
+    width: 20vh;
+    height: 20vh;
+    margin: auto;
+}
+
+.datosPerfil strong{
+    color: var(--color_1);
+    font-size: var(--sizeFont_2);
+}
+
+.datosPerfil i{
+    font-size: var(--sizeFont_4);
+}
+
+.fotoPerfil img{
+    width: 20vh;
+}
+
+.datosPerfil{
+    grid-area: datosPerfil;
+}
+
+.MenuPerfil_1{
+    grid-area: MenuPerfil_1;
+    cursor: pointer;
+}
+
+.MenuPerfil_2{
+    grid-area: MenuPerfil_2;
+}
+
+.MenuPerfil_3{
+    grid-area: MenuPerfil_3;
+}
+
+.MenuPerfil_4{
+    grid-area: MenuPerfil_4;
+}
+
+.MenuPerfil_5{
+    grid-area: MenuPerfil_5;
+}
+
+
+.contenido {
+    grid-area: contenido;
+}
+
+.noticias {
+    grid-area: noticias;
+}
